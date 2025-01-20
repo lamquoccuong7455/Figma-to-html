@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box; /* kích thước pt tính từ ngoài vào trong */
+}
+
+html {
+  font-size: 62.5%; /* set font hệ thống về hệ 10px để dễ tính rem */
+}
+
+body {
+  font-size: 1.6rem; /* khôi phục lại kích thước default của font theo hệ 10px */
+}
