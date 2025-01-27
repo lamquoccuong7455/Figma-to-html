@@ -65,6 +65,22 @@ a {
 	max-width: calc(100% - 48px);
 	margin: 0 auto;
 }
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: var(--line-clamp, 1); /* nếu không có biến, default =1 */
+	-webkit-box-orient: vertical; /* hướng từ trên xuống */
+	overflow: hidden;
+}
+
+.line-clamp.line-2 {
+	--line-clamp: 2;
+}
+
+.break-all {
+	word-break: break-all;
+}
+
 /* ============================= header =========================== */
 
 .header {
@@ -339,6 +355,7 @@ header.fixed {
 }
 
 .popular .course-item {
+	flex: 1; /* 3 cột item bằng nhau = 1 */
 	border-radius: 12px;
 	border: 1px solid var(--color-5);
 	background: var(--color-1);
