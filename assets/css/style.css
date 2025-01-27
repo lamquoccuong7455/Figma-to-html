@@ -5,6 +5,7 @@
 	--color-2: #5f5b53;
 	--color-3: #171100;
 	--color-4: #ffb900;
+	--color-5: #e2dfda;
 
 	--bg-color-1: #171100;
 	--bg-color-2: #fffcf4;
@@ -46,6 +47,7 @@ a {
 }
 
 .btn:hover {
+	cursor: pointer;
 	opacity: 0.9;
 }
 
@@ -291,6 +293,7 @@ header.fixed {
 	margin-top: 135px;
 }
 
+/* popular top */
 .popular-top {
 	display: flex;
 	align-items: center;
@@ -326,4 +329,82 @@ header.fixed {
 	background-color: var(--bg-color-3);
 	color: var(--color-1);
 	cursor: pointer;
+}
+
+/* course list */
+.popular .course-list {
+	margin-top: 55px;
+	display: flex;
+	gap: 30px;
+}
+
+.popular .course-item {
+	border-radius: 12px;
+	border: 1px solid var(--color-5);
+	background: var(--color-1);
+}
+
+.popular .course-item:hover {
+	border: 1px solid transparent;
+	box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .thumb {
+	width: 100%; /* 100% của cha */
+	height: 278px;
+	object-fit: cover;
+	border-radius: 12px 12px 0px 0px;
+}
+
+.popular .course-item .info {
+	padding: 16px 22px 22px;
+}
+
+.popular .course-item .foot,
+.popular .info .rating,
+.popular .info .head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.popular .info .title a {
+	color: var(--color-3);
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.67;
+}
+
+.popular .info .value {
+	margin-left: 6px;
+	color: var(--color-4);
+	font-size: 1.6rem;
+	line-height: 1.75;
+}
+
+.popular .course-item .desc {
+	margin-top: 6px;
+	color: #5f5b53;
+	font-size: 1.4rem;
+	line-height: 1.86;
+}
+
+.popular .course-item .foot {
+	margin-top: 6px;
+}
+
+.popular .course-item .price {
+	color: var(--color-3);
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.67;
+}
+
+.popular .course-item .btn {
+	border: none;
+}
+
+.popular .course-item .btn:hover {
+	color: var(--color-1);
+	background-color: var(--bg-color-3);
 }
