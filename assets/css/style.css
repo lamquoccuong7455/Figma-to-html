@@ -425,3 +425,69 @@ header.fixed {
 	color: var(--color-1);
 	background-color: var(--bg-color-3);
 }
+
+/* feedback */
+
+.feedback {
+	margin-top: 135px;
+	padding: 96px 0;
+	background: #2e2100;
+}
+
+.feedback-item {
+	display: flex;
+}
+
+.feedback .avatar {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.feedback .member-name {
+	margin-top: 18px;
+	color: #f7f7f7;
+	font-family: var(--font-1);
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 1.42;
+}
+
+.feedback .desc {
+	margin-top: 4px;
+	color: #bfbcb2;
+	font-size: 1.4rem;
+	line-height: 1.86;
+}
+
+.feedback .dots {
+	margin-top: 28px;
+	display: flex;
+	gap: 6px;
+}
+
+.feedback .dots .dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #634700;
+	cursor: pointer;
+}
+
+.feedback .dots .dot.active {
+	background-color: var(--bg-color-3);
+	cursor: default; /* không hiện bàn tay */
+}
+
+.feedback .content {
+	width: 66%;
+	margin-left: auto;
+}
+
+.feedback blockquote {
+	color: var(--color-1);
+	font-size: 2.6rem;
+	font-style: italic;
+	line-height: 1.54;
+}
