@@ -501,7 +501,7 @@ header.fixed {
 	line-height: 1.54;
 }
 
-/* ======features===== */
+/* ======features 1===== */
 .features {
 	margin-top: 135px;
 	padding: 65px 0;
@@ -549,4 +549,24 @@ header.fixed {
 	height: 50px;
 	margin-top: 32px;
 	background-color: var(--bg-color-3);
+}
+
+/* ======features 2===== */
+
+.features-2nd {
+	margin-top: 70px;
+}
+
+.features-2nd .body {
+	width: 100%;
+	flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+	width: 49%;
+}
+
+.features-2nd .images img {
+	width: 470px;
+	height: 440px;
 }
